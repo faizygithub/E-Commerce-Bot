@@ -4,7 +4,10 @@ from langchain_core.documents import Document
 
 
 def dataconveter():
-    product_data=pd.read_csv(r"D:\iNeuron\genAI\Ecombot\data\flipkart_product_review.csv")
+    # Un comment below line if you want to run it in local system
+    #product_data=pd.read_csv(r"D:\iNeuron\genAI\Ecombot\data\flipkart_product_review.csv")
+    # Use when you want to run it in AWS account
+    product_data=pd.read_csv("../data/flipkart_product_review.csv")
 
     data=product_data[["product_title","review"]]
 

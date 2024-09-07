@@ -25,4 +25,5 @@ def chat():
 
 if __name__ == '__main__':
    # app.run(debug= True)
+   ## use below app.run() when use are deplying it on AWS.If you wan to run on local un comment above one.
     app.run(host="0.0.0.0")
